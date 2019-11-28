@@ -1,0 +1,31 @@
+@import "@material/card/mdc-card";
+@import "@material/data-table/mdc-data-table";
+.mdc-card {
+    text-align: right;
+    margin: 0.5%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    width: 100px;
+    text-align: center;
+    /* Non-prefixed version, currently
+    
+    not supported by any browser */
+}
+
+.mdc-data-table__cell {
+    padding: 20px;
+    //@include mdc-data-table-cell-padding(600%);
+    //@include mdc-data-table-fill-color(primary); //SassError: Invalid style: '#99F'. Choose one of: primary, secondary, background, surface, error, on-primary, on-secondary, on-surface, on-error, text-primary-on-background, text-secondary-on-background, text-hint-on-background, text-disabled-on-background, text-icon-on-background, text-primary-on-light, text-secondary-on-light, text-hint-on-light, text-disabled-on-light, text-icon-on-light, text-primary-on-dark, text-secondary-on-dark, text-hint-on-dark, text-disabled-on-dark, text-icon-on-dark
+}

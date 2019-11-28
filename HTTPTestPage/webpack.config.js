@@ -1,10 +1,10 @@
 const autoprefixer = require('autoprefixer');
 module.exports = [{
-    entry: ['./shopcart/raw.scss', './shopcart/raw.js'],
+    entry: ['./233.scss', './233.js'],
     output: {
         // This is necessary for webpack to compile
         // But we never use style-bundle.js
-        filename: 'shopcart.js',
+        filename: 'bundle.js',
     },
     mode: 'production',
     module: {
@@ -13,7 +13,7 @@ module.exports = [{
                 use: [{
                         loader: 'file-loader',
                         options: {
-                            name: 'shopcart.css',
+                            name: 'bundle.css',
                         },
                     },
                     { loader: 'extract-loader' },
